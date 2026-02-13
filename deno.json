@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"strict": true
+	},
+	"fmt": {
+		"lineWidth": 80,
+		"semiColons": false,
+		"singleQuote": true,
+		"useTabs": true
+	},
+	"lock": false,
+	"tasks": {
+		"compile": "deno lint && deno check && deno compile --allow-env --allow-net --env-file --output mongrest src/main.ts",
+		"start": "deno run --allow-env --allow-net --env-file src/main.ts"
+	}
+}
