@@ -37,7 +37,7 @@ await MONGO.connect(
 )
 
 const HOST = Deno.env.get('DENO_HOST') ?? '127.0.0.1'
-const PORT = Deno.env.get('DENO_PORT') ?? 32717
+const PORT = Deno.env.get('DENO_PORT') ?? 17017
 
 Deno.serve(
 	{
